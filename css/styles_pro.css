@@ -1,0 +1,316 @@
+/* @font-face {
+	font-family: 'Poppins-Regular';
+	src: url('../font/Poppins-Regular.ttf');
+} */
+img {
+	cursor: pointer;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+.container {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	font-family: 'Poppins-Regular';
+}
+.container_01 {
+	width: 100%;
+	height: 875px;
+	/* background: blue; */
+	background: rgb(227,230,244);
+	background: linear-gradient(90deg, rgba(227,230,244,1) 1%, rgba(227,230,244,1) 35%, rgba(240,245,249,1) 61%, rgba(239,244,247,1) 100%);
+}
+.container_center {
+	position: absolute;
+	width: 87%;
+	/* height: 300px; */
+	/* background: red; */
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.redes {
+	display: none;
+}
+.header {
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	/* background: #ccc; */
+	z-index: 10;
+}
+.call {
+ 	display: none;
+}
+.description {
+	width: 100%;
+	height: 745px;
+	/* background: #0B2351; */
+	color: #9151DB;
+	position: relative;
+	left: 0px;
+	top: 20px;
+}
+.layer_prin {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	top: 70px;
+	/* background: #666; */
+	z-index: 10;
+	display: flex;
+}
+.layer_p01 {
+	width: 100%;
+	height: 100%;
+	/* background: yellow; */
+}
+.layer_p02 {
+	width: 20%;
+	height: 100%;
+	/* background: blue; */
+}
+.layer_p03 {
+	width: 100%;
+	height: 100%;
+	/* width: 52%;
+	height: 100%; */
+	/* background: red; */
+	background-image: url(../img/experto_movil.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: absolute;
+	top: 210px;
+	
+}
+.layer_1 {
+	letter-spacing: 0.33px;
+	color: #9151DB;
+	opacity: 0.78;
+	font: normal normal normal 22px/43px Raleway;
+	/* font-size: 22px; */
+	/* font-family: 'Raleway', sans-serif; */
+	position: absolute;
+	top: 45px;
+	right: 0;
+}
+.layer_2 {
+	width: 100%;
+	height: 100px;
+	color: #353C3D;
+	opacity: 1;
+	letter-spacing: 0.6px;
+	line-height: 0.9;
+	font-family: 'Raleway', sans-serif;
+	font: normal normal 600 40px/45px Raleway;
+	position: absolute;
+	top: 80px;
+	text-align: right;
+	color: #000;
+	/* font-weight: bold; */
+}
+.lets {
+	width: 100%;
+	height: 69px;
+	background: #9151DB 0% 0% no-repeat padding-box;
+	border-radius: 12px;
+	opacity: 1;
+	border: none;
+	bottom: 0px;
+	position: absolute;
+	color: #FFFFFF;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	letter-spacing: 1.2px;
+	box-shadow: 2px 12px 5px -6px rgba(150,41,129,0.23);
+	-webkit-box-shadow: 2px 12px 5px -6px rgba(150,41,129,0.23);
+	-moz-box-shadow: 2px 12px 5px -6px rgba(150,41,129,0.23);
+	cursor: pointer;
+	font-size: 23px;
+}
+.mano {
+	width: 50px;
+	position: absolute;
+	right: 0px;
+}
+/* .experto {
+	position: absolute;
+	width: 37%;
+	right: 0;
+	top: -96px;
+} */
+.linea {
+	display: none;
+}
+.iam {
+	width: 99%;
+	height: 110px;
+	position: absolute;
+	right: 0;
+	top: 530px;
+	color: #353C3D;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font: normal normal normal 15px/27px Roboto;
+	letter-spacing: 0.38px;
+	opacity: 1;
+	margin-top: 9%;
+}
+.logo {
+	position: absolute;
+	bottom: 0px;
+	cursor: pointer;
+	width: 97px;
+}
+
+@media screen  and (min-width:1400px) {
+	.layer_p03 {
+		/* background-size: cover; */
+		background-size: 100% 100%;
+	}
+	.layer_prin {
+		height: 500px;
+	}
+	.description {
+		height: 100%;
+		top: 0;
+	}
+	.layer_1 {
+		position: absolute;
+		top: 93px;
+	}
+	.layer_2 {
+		position: absolute;
+		top: 148px;
+		left: 0;
+	}
+	.iam {
+		top: 290px;
+		margin-top: 50px;
+	}
+	.mano {
+		margin-top: 62px;
+	}
+	.linea {
+		width: 27%;
+	}
+}
+@media only screen and (min-width:900px) {
+	form {
+		position: initial;
+		width: 70%;
+	}
+	.logo {
+    	width: auto;
+	} 
+	.container_center {
+		width: 90%;
+	}
+	.redes {
+		width: 200px;
+		height: 40px;
+		/* background: blue; */
+		bottom: 0px;
+		right: 14%;
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+	}
+	.call {
+		position: absolute;
+		right: 0%;
+		bottom: -17px;
+		font-family: 'Nunito Sans', sans-serif;
+		color: #9151DB;
+		cursor: pointer;
+		display: block;
+		font-size: 22px;
+	}
+	.header {
+		height: 100px;
+	}
+	.linea {
+		position: absolute;
+		width: 22%;
+		top: 25%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		height: 73%;
+		display: block;
+	}
+	.layer_p01 {
+		width: 50%;
+		height: 100%;
+		/* background: yellow; */
+	}
+	/*.layer_p02 {
+		width: 20%;
+		height: 100%;
+		background: blue;
+	}*/
+	.layer_p03 {
+		position: initial;
+		width: 73%;
+		background-position: right;
+		top: 110px;
+		background-image: url(../img/experto_desktop.png);
+		height: 100%;
+		background-size: 100% 100%;
+	} 
+	.mano {
+		top: 0px;
+		left: 3px;
+		width: 90px;
+	}
+	.description {
+		width: 90%;
+		left: 95px;
+		top: 0;
+		height: 100%;
+	}
+	.layer_1 {
+		font-size: 36px;
+		left: 0;
+	}
+	/* .layer_2 {
+		left: 0;
+		text-align: left;
+	} */
+	.iam {
+		width: 481px;
+		height: 101px;
+		left: 0;
+		top: 265px;
+		text-align: left;
+		font: normal normal normal 20px/30px Roboto;
+		letter-spacing: 0.5px;
+	}
+	.lets {
+		right: auto;
+		bottom: 0;
+		width: 350px;
+	}
+	.layer_prin {
+		height: 545px;
+		top: 200px;
+	}
+	.container_01 {	
+		height: 800px;
+	}
+	.layer_2 {
+		left: 0;
+		text-align: left;
+		font-size: 62px;
+		letter-spacing: -0.8px;
+		margin-top: 9px;
+		font: normal normal 600 63px/72px Raleway;
+		letter-spacing: 1.2px;
+	}
+}
